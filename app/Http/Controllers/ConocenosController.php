@@ -14,9 +14,7 @@ class ConocenosController extends Controller
      */
     public function index()
     {
-      $conocenos = Conocenos::all();
-      return view('Conocenos.conocenos', compact('conocenos'));
-        //
+        return view('Conocenos.conocenos');
     }
 
     /**

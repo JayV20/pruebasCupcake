@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Bienvenido;
+use App\Models\Bienvenido;
 use Illuminate\Http\Request;
 
 class BienvenidoController extends Controller
@@ -14,9 +14,7 @@ class BienvenidoController extends Controller
      */
     public function index()
     {
-      $bienvenido = Bienvenido::all();
-      return view('Bienvenido.bienvenido',compact('bienvenido'));
-        //
+        return view('Bienvenidos.bienvenido');
     }
 
     /**

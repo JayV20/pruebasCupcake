@@ -9,13 +9,13 @@
                 <ul class="navbar-nav mr-auto">
 
                     <li>
-                        <a class="nav-link" href="{{route('bienvenido.index')}}"><img src="images/MENU/INICIO.png" alt="" width="160" height="35"></a>
+                        <a class="nav-link" href="{{route('bienvenidos.index')}}"><img src="images/MENU/INICIO.png" alt="" width="160" height="35"></a>
                     </li>
                     <li>
-                        <a class="nav-link" href=""><img src="images/MENU/GALERIA.png" alt="" width="160" height="35"></a>
+                        <a class="nav-link" href="{{route('galeria.index')}}"><img src="images/MENU/GALERIA.png" alt="" width="160" height="35"></a>
                     </li>
                     <li>
-                        <a class="nav-link" href=""><img src="images/MENU/CONTACTANOS.png" alt="" width="160" height="35"></a>
+                        <a class="nav-link" href="{{route('contactanos.index')}}"><img src="images/MENU/CONTACTANOS.png" alt="" width="160" height="35"></a>
                     </li>
                     <li>
                         <a class="nav-link" href="{{route('conocenos.index')}}"><img src="images/MENU/CONOCENOS.png" alt="" width="160" height="35"></a>

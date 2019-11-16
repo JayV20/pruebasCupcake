@@ -24,9 +24,9 @@ class CreateDireccionEntregasTable extends Migration
             $table->string('colonia');
             $table->integer('cp');
             $table->timestamps();
-            $table->foreign('id_pedido')->refrences('id')->on('pedidos')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreign('id_alcaldia')->refrences('id')->on('alcaldias')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreign('id_cuidad')->refrences('id')->on('ciudads')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('id_pedido')->references('id')->on('pedidos')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('id_alcaldia')->references('id')->on('alcaldias')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('id_ciudad')->references('id')->on('ciudads')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

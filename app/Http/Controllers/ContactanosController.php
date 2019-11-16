@@ -14,9 +14,7 @@ class ContactanosController extends Controller
      */
     public function index()
     {
-      $contactanos = Contactanos::all();
-      return view('Contactanos.contactanos', compact('contactanos'));
-        //
+         return view('Contactanos.contactanos');
     }
 
     /**

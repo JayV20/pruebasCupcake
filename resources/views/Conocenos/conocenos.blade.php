@@ -1,23 +1,8 @@
 @extends('base')
 @section('title', 'Conocenos')
-@section('hero-extra')
-<div id="page-wrapper">
-	<div class="row">
-		<div class="col-lg-12">
-         <div class="page-header">
-            <a class="boton" id ="irAtras" title="Ir Atras"><i class="fas fa-arrow-left"></i></a>
-            <a class="boton" id ="irAdelante" title="Ir Adelante"><i class="fas fa-arrow-right"></i> </a> 
-            <a class="boton" href="#"><span data-feather="home"><i class="fas fa-home"></i> Home</span></a>
-         </div>
-      </div>
-   </div>
-@endsection
-
 @section('content')
 <div id="body">
-  <div class="row">
-    <div class="col-lg-12">
-      <div id="about">
+		<div id="about">
 			<center> <h1> Historia de "Doux Cake". </h1> 
 			</center>
             <br>
@@ -88,11 +73,9 @@ Iniciaron operaciones el 7 de julio de 1997 en un local de la planta baja del ed
 </h1>
 					<p>
 				  </p>
-          </div>
-	    </div>
-	  </div>
-    </div>
-  </div>
-</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 @endsection

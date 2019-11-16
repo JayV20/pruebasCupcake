@@ -17,7 +17,6 @@
 <body>
         @include('layouts.menu')
         <div>
-           @yield('hero-extra')
            @yield('content')
         </div>
         @include('layouts.footer')

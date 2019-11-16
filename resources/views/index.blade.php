@@ -1,11 +1,21 @@
 @extends('base')
 @section('title', 'Index')
+@section('hero-extra')
+<div id="page-wrapper">
+	<div class="row">
+		<div class="col-lg-12">
+         <div class="page-header">
+            <a class="boton" id ="irAtras" title="Ir Atras"><i class="fas fa-arrow-left"></i></a>
+            <a class="boton" id ="irAdelante" title="Ir Adelante"><i class="fas fa-arrow-right"></i> </a> 
+            <a class="boton" href="{{ route('index') }}"><span data-feather="home"><i class="fas fa-home"></i> Home</span></a>
+         </div>
+      </div>
+   </div>
+@endsection
 @section('content')
 <div id="body">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="header">
-		<div>
+		<div class="header">
+			<div>
 				<h1><span id="result_box" lang="es">todos los días recién horneados. </span></h1>
 				<p id="atre">Atrevete a probar nuestra variedad en sabores y diseños.<br>
 			    Los mejores Cupcakes, Pasteles y Galletas solo los tiene &quot;Cherry Cake&quot;.</p> 
@@ -73,9 +83,7 @@
             <br>
              Sabados  : 10am a 6pm 
                 </strong> </center>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+			</div>
+		</div>
+	</div>
 	@endsection
