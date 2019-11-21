@@ -1,89 +1,124 @@
 @extends('base')
 @section('title', 'Index')
-@section('hero-extra')
-<div id="page-wrapper">
-	<div class="row">
-		<div class="col-lg-12">
-         <div class="page-header">
-            <a class="boton" id ="irAtras" title="Ir Atras"><i class="fas fa-arrow-left"></i></a>
-            <a class="boton" id ="irAdelante" title="Ir Adelante"><i class="fas fa-arrow-right"></i> </a> 
-            <a class="boton" href="{{ route('index') }}"><span data-feather="home"><i class="fas fa-home"></i> Home</span></a>
-         </div>
-      </div>
-   </div>
-@endsection
 @section('content')
-<div id="body">
-		<div class="header">
-			<div>
-				<h1><span id="result_box" lang="es">todos los días recién horneados. </span></h1>
+<section class="home-about-area section-gap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+<!-- Apartado section descripcion-->								
+              <section class="post-content-area single-post-area" style="background-color: transparent;">
+              <div class="row">
+                <div class="col col-md-3">
+                  <div class="card" style="background-color: #EF7CFF;">
+                    <div class="card-body" >
+  
+				<h1><span id="result_box" lang="es">Todos los días recién horneados. </span></h1>
 				<p id="atre">Atrevete a probar nuestra variedad en sabores y diseños.<br>
 			    Los mejores Cupcakes, Pasteles y Galletas solo los tiene &quot;Cherry Cake&quot;.</p> 
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
                 </div>
-			<img src="images/freshly-baked.png" alt="">
-			<div>
+                </div>
+                </div>
+                <div class="col col-md-6">
+		
+		            <img  src="images/freshly-baked.png" width="100%">
+            
+                </div>
+                
+			<div class="col col-md-3">
+			<div class="card" style="background-color: #EF7CFF;">
+                    <div class="card-body" >
 				<h3><span id="result_box2" lang="es">100% hecho en casa</span></h3>
 				<ul>
-					<li>
-						 <img src="images/ham.png" alt="">
-                        <br>
-                        <br>
+					<li >
+						 <img class="img-fluid" src="images/ham.png" alt="">
 					</li>
 					<li>
-					     <img src="images/tart.png" alt="">
-                        <br>
-                        <br>
-                        <br>
+					     <img class="img-fluid" src="images/tart.png" alt="">
                         </li>
 				</ul>
+                </div>
+                </div>
 			</div>
-		</div>
+         
+          </div>
+        </section>
+<!-- Termina apartado de section descripcion-->
+        
+<!--Apartado info -->        
 		<div class="body">
-			<div>
-				<p>
+		  <div class="row">
+		    <div class="col col-md-5">
+				<p id="atre2">
 					La calidad y el amor de casa es lo que nos distinge no de nuestra competencia realizando los productos innovadores y de buen sabor.</p> 
                     <br>
                     <br>
 			</div>
+			<div class="col col-md-2">
 			<img src="images/strawberry-tart.png" alt="">
-			<div>
-				<p>Nuestros productos son realizados siempre pensando en nuestros clientes.<br>
+            </div>
+			<div class="col col-md-5">
+				<p id="atre2">Nuestros productos son realizados siempre pensando en nuestros clientes.<br>
 			    Tratando así de satisfacer todas sus necesidades.</p>
 			</div>
+			
+          </div>
 		</div>
-		<div class="footer">
-			<div class="figure">
+<!--Termina apartado info-->
+  
+<!--Apartado horarios-->
+		<section class="post-content-area single-post-area" style="background-color: transparent;">
+		  <div class="row">
+		    <div class="col col-md-6">
+<!-- Tarjeta de productos especiales-->		
+    <div class="card mb-3" style="max-width: 540px; background-color: transparent;" >
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="images/weekend-specials.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Productos Especiales</h5>
+        <p class="card-text">!Hechos especialmente para la temporada¡</p>
+      </div>
+    </div>
+  </div>
+</div>
+			<!--<div class="figure">
 				<div>
 					<h1> <center>Productos Especiales. </center></h1>
 					<img src="images/weekend-specials.jpg" alt="">
 				</div>
-			</div>
-			<div class="article">
-
-    <center></center>
-<h3>&nbsp;</h3>
-				
-			</div>
-		  <div class="section">
-          <center> <strong> Horario  </strong> </center>
-          <br>
-          <br>
-			 <img src="images/open.jpg" alt="">
-			  <br>
-              <br>
-              <br>
-               <center> <strong>      
-              Luneas a Viernes : 8am a 8pm 
-			<br>
-            <br>
-             Sabados  : 10am a 6pm 
-                </strong> </center>
-			</div>
-		</div>
+			</div>-->
+			
+            </div>
+            
+<!-- Tarjeta de horario-->			
+		<div class="col col-md-6">	
+          <div class="card mb-3" style="max-width: 540px; background-color: transparent;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="images/open.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Horario</h5>
+                  <p class="card-text">Luneas a Viernes : 8am a 8pm<br> 
+                 Sabados  : 10am a 6pm 
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </section>
+          
+<!-- Termina apartado Horarios-->
 	</div>
+  </div>
+      </div>
+</section>
 	@endsection

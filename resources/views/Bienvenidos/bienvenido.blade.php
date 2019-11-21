@@ -1,7 +1,15 @@
 @extends('base')
 @section('title', 'Bienvenido')
 @section('content')
-    <div id="body">
+<section class="home-about-area section-gap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+<!-- Carrousel -->
+         
+    <section class="post-content-area single-post-area" style="background-color: transparent;">
+              <div class="row">
+              <div class="col col-lg-12">
      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -30,8 +38,12 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <br>
-  <br>
+      </div>
+      </div>
+       
+        </section>
+  <!-- Termina Carrousel-->
+  
   
   <div id="content">
 			<ul class="gallery">
@@ -90,5 +102,8 @@
 			</ul>
 			<p>&nbsp;</p>
 		</div>
+      </div>
+    </div>
        </div>
+</section>
 @endsection

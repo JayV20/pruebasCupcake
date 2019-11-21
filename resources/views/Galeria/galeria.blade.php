@@ -2,8 +2,12 @@
 @extends('base')
 @section('title', 'Bienvenido')
 @section('content')
-        <br>
-        <br>
+<section class="home-about-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+<!-- Seccion de tarjetas -->
+       <section class="post-content-area single-post-area" style="background-color: transparent;">
         <div class="row">
             <div class="col-3">
                 <div class="card">
@@ -577,6 +581,11 @@
                 </div>
             </div>
         </div>
+                          </section>
+                      </div>
+                  </div>
+  </div>
+  </section>
         @section('extra-js') 
         <script>
             $(function () {
